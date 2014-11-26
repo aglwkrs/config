@@ -57,3 +57,12 @@ spring:
     config:
       uri: http://localhost:ZZZZZ
 
+endpoints:
+  restart: disabled
+eureka:
+  instance:
+    nonSecurePort: 81
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_1_PORT_8761_TCP_ADDR:localhost}:8761/eureka/
