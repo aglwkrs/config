@@ -52,7 +52,7 @@ eureka:
 
 ---
 spring:
-  profiles: jcv
+  profiles: jcvergara
   cloud:
     config:
       uri: http://localhost:ZZZZZ
