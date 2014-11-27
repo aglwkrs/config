@@ -55,7 +55,7 @@ spring:
   profiles: jcvergara
   cloud:
     config:
-      uri: http://localhost:ZZZZZ
+      uri: http://localhost:DDDDDDDD
       
     bar: Spring Boot
 
