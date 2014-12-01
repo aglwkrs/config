@@ -1,0 +1,23 @@
+info:
+  description: Comprobantes Electronicos
+  url: https://github.com/aglrs/config
+
+
+---
+spring:
+  profiles: docker
+  docker:
+    awVersion: 000000001
+
+endpoints:
+  restart: enabled
+
+eureka:
+  instance:
+    nonSecurePort: 80
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${AW_EUREKA_SV}:8761/eureka/
+
+
