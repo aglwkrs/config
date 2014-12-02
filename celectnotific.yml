@@ -13,5 +13,7 @@ endpoints:
   restart: enabled
 
 
+server:
+  port: 8082
 
 
